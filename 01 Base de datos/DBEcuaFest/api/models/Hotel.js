@@ -8,7 +8,15 @@
 module.exports = {
 
   attributes: {
-
+   nombreHotel:{
+     type:'string'
+   },
+    direccionHotel:{
+     type:'string'
+    },
+    precioEstadia:{
+     type:'number'
+    }
   }
 };
 

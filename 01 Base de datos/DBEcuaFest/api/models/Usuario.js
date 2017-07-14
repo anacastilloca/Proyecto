@@ -8,7 +8,16 @@
 module.exports = {
 
   attributes: {
-    nombreusuario:{
+    nombreUsuario:{
+      type:'string'
+    },
+    rolUsuario:{
+      type:'string'
+    },
+    username:{
+      type:'string'
+    },
+    clave:{
       type:'string'
     }
 

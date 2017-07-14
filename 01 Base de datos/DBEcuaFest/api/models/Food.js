@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+   nombrePlato:{
+     type:'string'
+   },
+    descripcionPlato:{
+     type:'string'
+    }
   }
 };
 

@@ -8,6 +8,15 @@
 module.exports = {
 
   attributes: {
+    nombreActividad:{
+      type:'string'
+    },
+    direccionActividad:{
+      type:'string'
+    },
+    descripcionActividad:{
+      type:'string'
+    }
 
   }
 };

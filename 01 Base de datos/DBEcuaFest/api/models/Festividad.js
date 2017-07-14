@@ -8,7 +8,15 @@
 module.exports = {
 
   attributes: {
-
+    nombreFestividad:{
+      type:'string'
+    },
+    provinciaFestividad:{
+      type:'string'
+    },
+    imagenesFestividad:{
+      type:'string'
+    }
   }
 };
 
