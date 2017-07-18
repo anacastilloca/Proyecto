@@ -19,6 +19,9 @@ module.exports = {
     },
     imagenHotel:{
       type:'string'
+    },
+    idFestividad:{
+      model:"Festividad"//Modelo a Relacionar (Papa)
     }
   }
 };

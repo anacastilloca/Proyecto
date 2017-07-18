@@ -19,6 +19,18 @@ module.exports = {
     },
     imagenLugarFestividad:{
       type:'string'
+    },
+    listaActividadesDeFestividad:{
+      collection: 'Actividad', //Es el nombre del MODELO a relacionar (hijo)
+      via: 'idFestividad' //Es el nombre del FOREIGN KEY
+    },
+    listaComidadDeFestividad:{
+      collection: 'Food',
+      via: 'idFestividad'
+    },
+    listaHotelesDeFestividad:{
+      collection: 'Hotel',
+      via: 'idFestividad'
     }
   }
 };

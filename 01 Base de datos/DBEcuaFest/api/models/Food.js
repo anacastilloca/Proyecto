@@ -16,6 +16,9 @@ module.exports = {
     },
     imagenFood:{
       type:'string'
+    },
+    idFestividad:{
+      model:"Festividad"//Modelo a Relacionar (Papa)
     }
   }
 };
