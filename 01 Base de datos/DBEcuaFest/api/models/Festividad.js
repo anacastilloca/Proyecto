@@ -11,10 +11,13 @@ module.exports = {
     nombreFestividad:{
       type:'string'
     },
-    provinciaFestividad:{
+    provinciaLugarFestividad:{
       type:'string'
     },
-    imagenesFestividad:{
+    mesFestividad:{
+      type:'string'
+    },
+    imagenLugarFestividad:{
       type:'string'
     }
   }

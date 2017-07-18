@@ -16,6 +16,9 @@ module.exports = {
     },
     precioEstadia:{
      type:'number'
+    },
+    imagenHotel:{
+      type:'string'
     }
   }
 };

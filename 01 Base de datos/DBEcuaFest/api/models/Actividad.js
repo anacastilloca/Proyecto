@@ -16,6 +16,12 @@ module.exports = {
     },
     descripcionActividad:{
       type:'string'
+    },
+    fechaActividad:{
+      type:'date'
+    },
+    imagenActividad:{
+      type:'string'
     }
 
   }

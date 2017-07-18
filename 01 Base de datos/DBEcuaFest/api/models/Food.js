@@ -13,6 +13,9 @@ module.exports = {
    },
     descripcionPlato:{
      type:'string'
+    },
+    imagenFood:{
+      type:'string'
     }
   }
 };

@@ -43,7 +43,7 @@ module.exports.connections = {
    someMysqlServer: {
      adapter: 'sails-mysql',
      host: 'localhost',
-     user: 'ecuafest', //optional
+     user: 'admin', //optional
      password: '123456', //optional
      database: 'EcuaFestDB' //optional
    },
