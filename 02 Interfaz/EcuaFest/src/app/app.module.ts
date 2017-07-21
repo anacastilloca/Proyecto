@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { FestividadInicioComponent } from './Componentes/festividad-inicio/festividad-inicio.component';
+
 
 @NgModule({
   declarations: [
@@ -11,10 +12,13 @@ import { FestividadInicioComponent } from './Componentes/festividad-inicio/festi
     FestividadInicioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
 
   ],
   providers: [],
   bootstrap: [FestividadInicioComponent]
 })
+
 export class AppModule { }
+
