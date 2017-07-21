@@ -1,0 +1,39 @@
+header{
+  background-color: #e2e499;
+}
+
+#bandera-encabezado{
+  max-width: 100%;
+  margin: 10px 145px 10px;
+}
+
+#mensaje-encabezado{
+  margin-top: 20px;
+  text-align:center;
+  font-size:3.2em;
+  font-weight:300;
+  color:#7b007b;
+  text-transform:uppercase;
+  animation:blur 2s ease-out infinite;
+}
+@keyframes blur{
+  from{  text-shadow:0px 0px 10px ,
+    0px 0px 10px #b5de9c,
+    0px 0px 25px #d60021,0px 0px 25px #d60021,
+    0px 0px 25px orange,0px 0px 25px orange,
+    0px 0px 25px orange,0px 0px 50px orange  }
+}
+
+.carousel{
+  background: #2f4357;
+  margin-top: 20px;
+}
+.carousel .item{
+  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+  margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+  margin: 20px;
+}
