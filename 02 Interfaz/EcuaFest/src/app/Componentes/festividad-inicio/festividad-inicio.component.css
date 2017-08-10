@@ -55,13 +55,28 @@ header{
 #imagen-festividad{
   width: 300px;
   height: 200px;
+
 }
 .col-md-4{
-  border-bottom: double 2px red;
-  border-top: double 2px red;
-  border-left: double 2px red;
+  border-bottom: double 10px red;
+  border-top: double 10px yellow;
+  border-left: double 10px blue;
+}
+.col-sm-4{
+  border-bottom: double 10px red;
+  border-top: double 10px yellow;
+  border-right: double 10px blue;
 }
 .textofestividad{
   font-family: "Open Sans", "Myriad Pro", Arial, sans-serif;
   font-size: 20px;
+}
+
+#titulofestividades{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+
+}
+#fondocontenedor{
+  background-color: aliceblue;
 }

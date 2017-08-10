@@ -1,4 +1,4 @@
-<header>
+<header xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <div class="row">
     <div class="col-sm-3">
       <img [src]="banderaEcuador" id="bandera-encabezado" alt="Bandera del Ecuador">
@@ -44,11 +44,13 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<p id="titulofestividades" align="center">FESTIVIDADES</p>
+
 <!--Tabla de Festividades-->
- <div class="container" *ngFor="let festividad of festividades">
-  <div class="row" >
-    <div class="col-md-3">
+
+ <div class="container" id="fondocontenedor" >
+   <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
+  <div class="row" *ngFor="let festividad of festividades">
+    <div class="col-sm-2">
     </div>
       <div class="col-md-4">
         <p class="textofestividad"><strong>Nombre de festividad:</strong> <br>
@@ -56,17 +58,19 @@
         <p class="textofestividad"><strong>Mes de la festividad:</strong><br>
             {{festividad.mesFestividad}}</p>
         <p class="textofestividad"><strong>Provincia de la festividad:</strong><br>
-            {{festividad.provinciaLugarFestividad}}</p>
+            {{festividad.provinciaLugarFestividad}}</p> <br>
       </div>
-        <div class="col-md-3">
-            <img [src]="festividad.imagenLugarFestividad" alt="" id="imagen-festividad"> <br>
+        <div class="col-sm-4"><br>
+          <button><img [src]="festividad.imagenLugarFestividad" alt="" id="imagen-festividad"></button> <br>
         </div>
 
       </div>
 
 
 
+
  </div>
+
 </body>
 
 

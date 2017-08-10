@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63777b10-fcab-416c-919d-13608029093c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.css" afterPath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.html" afterPath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.ts" afterPath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Servicios/url.service.ts" afterPath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Servicios/url.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/app.module.ts" afterPath="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/app.module.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,21 +52,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="festividad-inicio.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="festividad-inicio.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+            <state relative-caret-position="510">
+              <caret line="50" column="54" lean-forward="false" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="festividad-inicio.component.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="festividad-inicio.component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="389">
+              <caret line="80" column="30" lean-forward="false" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="festividad-inicio.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,16 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01 Base de datos/DBEcuaFest/config/models.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -154,8 +150,8 @@
         <option value="$PROJECT_DIR$/01 Base de datos/DBEcuaFest/config/models.js" />
         <option value="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/index.html" />
-        <option value="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.html" />
         <option value="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.css" />
+        <option value="$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.html" />
       </list>
     </option>
   </component>
@@ -556,12 +552,12 @@
       <workItem from="1500644477410" duration="2050000" />
       <workItem from="1501189709000" duration="2253000" />
       <workItem from="1501895274711" duration="8794000" />
-      <workItem from="1502376142519" duration="9562000" />
+      <workItem from="1502376142519" duration="11377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53505000" />
+    <option name="totallyTimeSpent" value="55320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1520" height="1078" extended-state="0" />
@@ -821,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -958,18 +947,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.html">
+    <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="389">
+          <caret line="80" column="30" lean-forward="false" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02 Interfaz/EcuaFest/src/app/Componentes/festividad-inicio/festividad-inicio.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="50" column="54" lean-forward="false" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
           <folding />
         </state>
       </provider>
