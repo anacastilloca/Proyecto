@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { AppComponent } from './app.component';
 import { FestividadInicioComponent } from './Componentes/festividad-inicio/festividad-inicio.component';
+import {UrlService} from "./Servicios/url.service";
+import {FestividadService} from "./Servicios/festividad.service";
+import {HttpModule} from "@angular/http";
 
 
 @NgModule({
@@ -13,10 +16,14 @@ import { FestividadInicioComponent } from './Componentes/festividad-inicio/festi
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpModule,
 
   ],
-  providers: [],
+  providers: [
+    UrlService,
+    FestividadService
+  ],
   bootstrap: [FestividadInicioComponent]
 })
 

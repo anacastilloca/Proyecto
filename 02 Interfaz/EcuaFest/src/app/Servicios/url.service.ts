@@ -3,6 +3,10 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class UrlService {
 
-  constructor() { }
+  url='http://localhost:1337/';
+
+  constructor() {
+
+  }
 
 }

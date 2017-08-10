@@ -52,3 +52,16 @@ header{
 .carousel-control-prev-icon{
   padding: 25px;
 }
+#imagen-festividad{
+  width: 300px;
+  height: 200px;
+}
+.col-md-4{
+  border-bottom: double 2px red;
+  border-top: double 2px red;
+  border-left: double 2px red;
+}
+.textofestividad{
+  font-family: "Open Sans", "Myriad Pro", Arial, sans-serif;
+  font-size: 20px;
+}

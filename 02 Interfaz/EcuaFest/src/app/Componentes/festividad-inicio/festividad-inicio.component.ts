@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FestividadClass} from "../../Clases/FestividadClass";
+import {FestividadService} from "../../Servicios/festividad.service";
 
 @Component({
   selector: 'app-festividad-inicio',
@@ -18,10 +20,26 @@ export class FestividadInicioComponent implements OnInit {
       img4:string="assets/Imagenes/Carrusel/Img4.jpg";
 
   // LLamado a las Clase Festividad
+    festividades:FestividadClass[]=[];
+    nuevaFestividad:FestividadClass = new FestividadClass("");
 
-  constructor() { }
+  //Llamado del servicio
+    constructor(private  _festividadServicio:FestividadService) { }
 
   ngOnInit() {
+    this._festividadServicio.presentarFestividades()
+      .subscribe(
+        (festividades:FestividadClass[])=>{
+         this.festividades=festividades.map(
+           (festividad:FestividadClass)=>{
+             festividad.editar=false;
+             return festividad;
+           }
+         );
+        },
+      error =>{
+          console.log("Error de presentación",error)
+      } );
   }
 
 
