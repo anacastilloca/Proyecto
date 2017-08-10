@@ -3,37 +3,52 @@ header{
 }
 
 #bandera-encabezado{
+  width:350px;
+  hight:200px;
   max-width: 100%;
-  margin: 10px 145px 10px;
+  margin: 10px 110px 10px;
 }
 
 #mensaje-encabezado{
-  margin-top: 20px;
+  margin-top: 40px;
+  font-family: "Times New Roman", Times, serif;
   text-align:center;
-  font-size:3.2em;
-  font-weight:300;
-  color:#7b007b;
+  font-size:4.0em;
+  line-height:70px;
+  color:#7401DF;
   text-transform:uppercase;
-  animation:blur 2s ease-out infinite;
+  animation:blur 3s ease-out infinite;
 }
 @keyframes blur{
-  from{  text-shadow:0px 0px 10px ,
-    0px 0px 10px #b5de9c,
-    0px 0px 25px #d60021,0px 0px 25px #d60021,
+  from{  text-shadow:
+    0px 0px 10px #F7BE81, 0px 0px 10px #F7BE81,
     0px 0px 25px orange,0px 0px 25px orange,
-    0px 0px 25px orange,0px 0px 50px orange  }
+    0px 0px 25px red,0px 0px 25px red,
+    0px 0px 25px red,0px 0px 25px red,
+    0px 0px 50px #F7BE81,0px 0px 50px #F7BE81  }
 }
 
-.carousel{
-  background: #2f4357;
-  margin-top: 20px;
+.carousel {
+  margin-top:20px;
+  margin-bottom: 60px;
 }
-.carousel .item{
-  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+
+.d-block
+{
+  width: 100%;
 }
-.carousel .item img{
-  margin: 0 auto; /* Align slide image horizontally center */
+.carousel-caption{
+  background-color:#F2F2F2;
+  opacity: 0.7;
+  font-style: italic;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
 }
-.bs-example{
-  margin: 20px;
+.carousel-control-next-icon{
+  padding: 25px;
+
+}
+.carousel-control-prev-icon{
+  padding: 25px;
 }
