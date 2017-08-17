@@ -11,6 +11,9 @@ import { HotelComponent } from './Componentes/Datos de Cada Festividad/hotel/hot
 import { FoodComponent } from './Componentes/Datos de Cada Festividad/food/food.component';
 import { ActividadComponent } from './Componentes/Datos de Cada Festividad/actividad/actividad.component';
 import {ModuloDeRutas} from "./rutas";
+import {ActividadService} from "./Servicios/actividad.service";
+import {FoodService} from "./Servicios/food.service";
+import {HotelService} from "./Servicios/hotel.service";
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import {ModuloDeRutas} from "./rutas";
   ],
   providers: [
     UrlService,
-    FestividadService
+    FestividadService,
+    ActividadService,
+    FoodService,
+    HotelService
   ],
   bootstrap: [FestividadInicioComponent]
 })

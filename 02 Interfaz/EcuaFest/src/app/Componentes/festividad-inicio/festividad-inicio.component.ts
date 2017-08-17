@@ -22,7 +22,7 @@ export class FestividadInicioComponent implements OnInit {
   variable:boolean=true;
 
   // LLamado a las Clase Festividad
-    festividades:FestividadClass[]=[];
+   festividades:FestividadClass[]=[];
     nuevaFestividad:FestividadClass = new FestividadClass("");
 
   //Llamado del servicio
