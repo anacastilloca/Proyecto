@@ -9,7 +9,7 @@
   </div>
 
 </header>
-<body>
+<body >
 <!--Carrusel-->
 <div id="carouselFest" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
@@ -47,33 +47,56 @@
 
 <!--Tabla de Festividades-->
 
- <div class="container" id="fondocontenedor" >
-   <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
+<div class="container" id="fondocontenedor" *ngIf="variable">
+
+  <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
   <div class="row" *ngFor="let festividad of festividades">
     <div class="col-sm-2">
     </div>
-      <div class="col-md-4">
-        <p class="textofestividad"><strong>Nombre de festividad:</strong> <br>
-            {{festividad.nombreFestividad}}</p>
-        <p class="textofestividad"><strong>Mes de la festividad:</strong><br>
-            {{festividad.mesFestividad}}</p>
-        <p class="textofestividad"><strong>Provincia de la festividad:</strong><br>
-            {{festividad.provinciaLugarFestividad}}</p> <br>
-      </div>
-        <div class="col-sm-4"><br>
-          <button><img [src]="festividad.imagenLugarFestividad" alt="" id="imagen-festividad"></button> <br>
-        </div>
+    <div class="col-md-4">
+      <p class="textofestividad"><strong>Nombre de festividad:</strong> <br>
+        {{festividad.nombreFestividad}}</p>
+      <p class="textofestividad"><strong>Mes de la festividad:</strong><br>
+        {{festividad.mesFestividad}}</p>
+      <p class="textofestividad"><strong>Provincia de la festividad:</strong><br>
+        {{festividad.provinciaLugarFestividad}}</p> <br>
+    </div>
+    <div class="col-sm-4"><br>
+      <img [src]="festividad.imagenLugarFestividad" alt="" id="imagen-festividad">
+    <!--  <a [routerLink]="['actividad']" class="btn btn-success " (click)="onClick()">Datoss</a>-->
+      <a [routerLink]="['actividad',festividad.id]" class="btn btn-success" (click)="onClick()">Datoss</a>
+      <br>
 
-      </div>
+    </div>
+
+  </div>
+
+</div>
 
 
-
-
- </div>
 
 </body>
-
-
+<form *ngIf="DetalleClienteForm">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+  <span class="navbar-toggler-icon"></span>
+  <a class="navbar-brand" href="#"></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['actividad']">Actividad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['food']">Food</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['hotel']">Hotel</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+</form>
 <footer>
 
 </footer>

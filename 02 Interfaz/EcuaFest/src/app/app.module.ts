@@ -7,17 +7,25 @@ import { FestividadInicioComponent } from './Componentes/festividad-inicio/festi
 import {UrlService} from "./Servicios/url.service";
 import {FestividadService} from "./Servicios/festividad.service";
 import {HttpModule} from "@angular/http";
+import { HotelComponent } from './Componentes/Datos de Cada Festividad/hotel/hotel.component';
+import { FoodComponent } from './Componentes/Datos de Cada Festividad/food/food.component';
+import { ActividadComponent } from './Componentes/Datos de Cada Festividad/actividad/actividad.component';
+import {ModuloDeRutas} from "./rutas";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FestividadInicioComponent
+    FestividadInicioComponent,
+    HotelComponent,
+    FoodComponent,
+    ActividadComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     HttpModule,
+    ModuloDeRutas
 
   ],
   providers: [
