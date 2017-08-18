@@ -62,11 +62,12 @@ header{
   border-top: double 10px yellow;
   border-left: double 10px blue;
 }
-.col-sm-4{
+.col-sm-5{
   border-bottom: double 10px red;
   border-top: double 10px yellow;
   border-right: double 10px blue;
 }
+
 .textofestividad{
   font-family: "Open Sans", "Myriad Pro", Arial, sans-serif;
   font-size: 20px;
@@ -80,3 +81,5 @@ header{
 #fondocontenedor{
   background-color: aliceblue;
 }
+
+

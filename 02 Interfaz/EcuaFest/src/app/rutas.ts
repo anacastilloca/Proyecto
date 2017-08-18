@@ -5,9 +5,10 @@ import {HotelComponent} from "./Componentes/Datos de Cada Festividad/hotel/hotel
 import {ModuleWithProviders} from "@angular/core";
 import {FestividadInicioComponent} from "./Componentes/festividad-inicio/festividad-inicio.component";
 import {AppComponent} from "./app.component";
+import {EditarFestividadComponent} from "./Componentes/festividad-inicio/editar-festividad/editar-festividad.component";
 export const rutass:Routes=[
   {
-    path:"actividad/:id",
+    path:"actividad/:idFestividadDeActi",
     component:ActividadComponent
   },{
     path:"food/:id",
@@ -17,8 +18,11 @@ export const rutass:Routes=[
     component:HotelComponent
   },
   {
-    path:"principal",
-    component:AppComponent
+    path:"",
+    component:FestividadInicioComponent
+  },{
+    path:"edidarFestividad/:idFestividad",
+    component:EditarFestividadComponent
   }
 
 ];

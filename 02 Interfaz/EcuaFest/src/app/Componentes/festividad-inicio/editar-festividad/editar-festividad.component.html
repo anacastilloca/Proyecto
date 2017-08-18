@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="animated bounceIn">
+    <h4>Actualizar Festividad </h4>
+
+    <div class="form-group">
+      <label class="col-form-label">Nombre de la Festividad:  </label>
+      <input class="form-control"
+             placeholder="Ingrese nuevo Nombre de la Festividad"
+             type="text"
+             #festividadLocalNombre
+      >
+      <input class="form-control"
+             placeholder="Ingrese la provinciad de la Festividad"
+             type="text"
+             #festividadLocalProvincia
+      >
+      <input class="form-control"
+             placeholder="Ingrese nuevo mes de la Festividad"
+             type="text"
+             #festividadLocalMes
+      >
+      <input class="form-control"
+             placeholder="Ingrese nuevo nueva de la Festividad"
+             type="text"
+             #festividadLocalImagen
+      >
+    </div>
+
+    <button class="btn btn-primary"
+            (click)="actualizarFestividad(festividadLocalNombre.value,
+                                                          festividadLocalProvincia.value,
+                                                          festividadLocalMes.value,
+                                                          festividadLocalImagen.value) " [routerLink]="['']"> Actualizar usuarioLocal
+
+    </button>
+    <a class="btn btn-primary" href="#">Cancelar</a>
+
+  </div>
+</div>

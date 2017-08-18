@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {Http} from "@angular/http";
 import 'rxjs/add/operator/map'
 import {UrlService} from "./url.service";
+import {FestividadClass} from "../Clases/FestividadClass";
 
 @Injectable()
 export class FestividadService {
@@ -19,4 +20,25 @@ export class FestividadService {
     })
   }
 
+  presentarActividadesPorFest(idFestividad:number){
+    return this._http
+      .get(this.url+`/${idFestividad}`)
+      .map(res => {
+        return res.json()
+      })
+  }
+
+  editar(festividad:FestividadClass, id:number){
+    let datosAEnviar = {
+      nombreFestividad:festividad.nombreFestividad,
+      provinciaLugarFestividad:festividad.provinciaLugarFestividad,
+      mesFestividad:festividad.mesFestividad,
+      imagenLugarFestividad:festividad.imagenLugarFestividad
+    };
+    return this._http
+      .put(this.url+`/${id}`,datosAEnviar)
+      .map(res => {
+        return res.json()
+      })
+  }
 }

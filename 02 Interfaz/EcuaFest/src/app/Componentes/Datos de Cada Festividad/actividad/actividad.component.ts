@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActividadClass} from "../../../Clases/ActividadClass";
 import {ActividadService} from "../../../Servicios/actividad.service";
 import {FestividadClass} from "../../../Clases/FestividadClass";
+import {Router, ActivatedRoute, Params} from '@angular/router';
 
 @Component({
   selector: 'app-actividad',
@@ -13,11 +14,12 @@ export class ActividadComponent implements OnInit {
 
 
   nuevaActividad:ActividadClass = new ActividadClass("");
-  constructor(private _ActividadServicio:ActividadService) {
+  constructor(private _ActividadServicio:ActividadService, private _activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this._ActividadServicio.presentarActividadesPorFest(1)
+    let params: any = this._activatedRoute.snapshot.params;
+    this._ActividadServicio.presentarActividadesPorFest(params.idFestividadDeActi)
       .subscribe(
         (actividades:ActividadClass[])=>{
           this.actividades=actividades.map(

@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { AppComponent } from './app.component';
 import { FestividadInicioComponent } from './Componentes/festividad-inicio/festividad-inicio.component';
 import {UrlService} from "./Servicios/url.service";
@@ -14,7 +13,9 @@ import {ModuloDeRutas} from "./rutas";
 import {ActividadService} from "./Servicios/actividad.service";
 import {FoodService} from "./Servicios/food.service";
 import {HotelService} from "./Servicios/hotel.service";
-
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {FormsModule} from "@angular/forms";
+import { EditarFestividadComponent } from './Componentes/festividad-inicio/editar-festividad/editar-festividad.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,16 @@ import {HotelService} from "./Servicios/hotel.service";
     FestividadInicioComponent,
     HotelComponent,
     FoodComponent,
-    ActividadComponent
+    ActividadComponent,
+    EditarFestividadComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     HttpModule,
-    ModuloDeRutas
+    FormsModule,
+    ModuloDeRutas,
+    NgbModule.forRoot()
 
   ],
   providers: [

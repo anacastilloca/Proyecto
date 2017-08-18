@@ -47,11 +47,15 @@
 
 <!--Tabla de Festividades-->
 
-<div class="container" id="fondocontenedor" *ngIf="variable">
+<form class="container" id="fondocontenedor" *ngIf="variable">
+  <label>Buscar:</label>
+  <br>
 
-  <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
+  <!--Para que funcione ngModel importar en em Module.ts el FormsModule-->
+   <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
   <div class="row" *ngFor="let festividad of festividades">
     <div class="col-sm-2">
+            <a [routerLink]="['edidarFestividad',festividad.id]" class="btn btn-success" (click)="onClick()">Editar</a>
     </div>
     <div class="col-md-4">
       <p class="textofestividad"><strong>Nombre de festividad:</strong> <br>
@@ -61,42 +65,32 @@
       <p class="textofestividad"><strong>Provincia de la festividad:</strong><br>
         {{festividad.provinciaLugarFestividad}}</p> <br>
     </div>
-    <div class="col-sm-4"><br>
+    <div class="col-sm-5"><br>
       <img [src]="festividad.imagenLugarFestividad" alt="" id="imagen-festividad">
     <!--  <a [routerLink]="['actividad']" class="btn btn-success " (click)="onClick()">Datoss</a>-->
-      <a [routerLink]="['actividad',festividad.id]" class="btn btn-success" (click)="onClick()">Datoss</a>
+      <br>
+      <a [routerLink]="['actividad',festividad.id]" class="btn btn-success" (click)="onClick()">Actividades</a>
+      <a [routerLink]="['food',festividad.id]" class="btn btn-success" (click)="onClick()">Comidas</a>
+      <a [routerLink]="['hotel',festividad.id]" class="btn btn-success" (click)="onClick()">Hoteles</a>
       <br>
 
     </div>
 
   </div>
+</form>
 
-</div>
+<form *ngIf="DetalleClienteForm">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" ></button>
+    <a class="navbar-brand" href="#">Volver a Festividades</a>
+    </nav>
+  <router-outlet></router-outlet>
+</form>
 
 
 
 </body>
-<form *ngIf="DetalleClienteForm">
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-  <span class="navbar-toggler-icon"></span>
-  <a class="navbar-brand" href="#"></a>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['actividad']">Actividad</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['food']">Food</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['hotel']">Hotel</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<router-outlet></router-outlet>
-</form>
+
 <footer>
 
 </footer>

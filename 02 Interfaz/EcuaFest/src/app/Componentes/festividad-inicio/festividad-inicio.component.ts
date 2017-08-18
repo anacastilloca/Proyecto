@@ -18,12 +18,14 @@ export class FestividadInicioComponent implements OnInit {
       img2:string="assets/Imagenes/Carrusel/Img2.jpg";
       img3:string="assets/Imagenes/Carrusel/Img3.jpg";
       img4:string="assets/Imagenes/Carrusel/Img4.jpg";
-  DetalleClienteForm:boolean;
-  variable:boolean=true;
+
+      DetalleClienteForm:boolean;
+      variable:boolean=true;
 
   // LLamado a las Clase Festividad
    festividades:FestividadClass[]=[];
     nuevaFestividad:FestividadClass = new FestividadClass("");
+    festividadLocal:FestividadClass;
 
   //Llamado del servicio
     constructor(private  _festividadServicio:FestividadService) { }
@@ -43,6 +45,8 @@ export class FestividadInicioComponent implements OnInit {
           console.log("Error de presentación",error)
       } );
   }
+
+
   onClick(){
     this.DetalleClienteForm=true;
     this.variable=false;
