@@ -1,3 +1,18 @@
-<p>
-  food works!
-</p>
+<form class="container" id="fondocontenedor">
+<div class="container">
+  <p id="titulofestividades" align="center">LISTA DE COMIDAS</p>
+  <div class="row" *ngFor="let comida of comidas">
+
+    <div class="col-sm-6">
+      <p class="textofestividad"><strong>Nombre del Plato:</strong> <br>
+        {{comida.nombrePlato}}</p>
+      <p class="textofestividad"><strong>Descripción del Plato:</strong><br>
+        {{comida.descripcionPlato}}</p>
+    </div>
+      <div class="col-md-6"> <br>
+        <img [src]="comida.imagenFood" alt="" id="imagen-festividad">
+      </div>
+
+  </div>
+</div>
+</form>

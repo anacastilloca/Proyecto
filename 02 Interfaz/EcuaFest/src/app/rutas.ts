@@ -12,10 +12,10 @@ export const rutass:Routes=[
     path:"actividad/:idFestividadDeActi",
     component:ActividadComponent
   },{
-    path:"food/:id",
+    path:"food/:idFestividadDeFood",
     component:FoodComponent
   },{
-    path:"hotel/:id",
+    path:"hotel/:idFestividadDeHotel",
     component:HotelComponent
   },
   {
@@ -26,7 +26,7 @@ export const rutass:Routes=[
     component:EditarFestividadComponent
   },
   {
-    path:"crearFestividad/:idFestividad",
+    path:"crearFesti",
     component:CrearFestividadComponent
   }
 

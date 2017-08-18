@@ -48,16 +48,18 @@
 <!--Tabla de Festividades-->
 
 <form class="container" id="fondocontenedor" *ngIf="variable">
-  <label>Buscar:</label>
+  <label></label>
   <br>
 
   <!--Para que funcione ngModel importar en em Module.ts el FormsModule-->
    <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
+  <a [routerLink]="['crearFesti']" class="btn btn-success" (click)="onClick()">Crear nueva Festividad</a><br><br>
+
   <div class="row" *ngFor="let festividad of festividades">
     <div class="col-sm-2">
       <a [routerLink]="['editarFestividad',festividad.id]" class="btn btn-success" (click)="onClick()">Editar</a><br><br>
-      <a [routerLink]="['crearFestividad']" class="btn btn-success" (click)="onClick()">Crear</a><br><br>
-            <button class="btn btn-danger" (click)="eliminarFestividad(festividad)"> Eliminar</button>
+
+      <button class="btn btn-danger" (click)="eliminarFestividad(festividad)"> Eliminar</button>
     </div>
     <div class="col-md-4">
       <p class="textofestividad"><strong>Nombre de festividad:</strong> <br>

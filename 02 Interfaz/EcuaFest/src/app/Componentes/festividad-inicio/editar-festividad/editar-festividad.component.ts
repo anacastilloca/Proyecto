@@ -23,7 +23,9 @@ export class EditarFestividadComponent implements OnInit {
     let params: any = this._activatedRoute.snapshot.params;
     let actualizacion={
       nombreFestividad:nombreFestividad,
-      provinciaLugarFestividad:provinciaLugarFestividad
+      provinciaLugarFestividad:provinciaLugarFestividad,
+      mesFestividad:mesFestividad,
+      imagenLugarFestividad:imagenLugarFestividad
     };
     this._http.put("http://localhost:1337/Festividad/"+params.idFestividad,actualizacion).map(
       (res)=>{

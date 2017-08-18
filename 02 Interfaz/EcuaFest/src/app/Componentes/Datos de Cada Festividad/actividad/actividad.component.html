@@ -1,21 +1,19 @@
 <div class="container">
-  <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
-  ss
+  <p id="titulofestividades" align="center">LISTA DE ACTIVIDADES</p>
   <div class="row" *ngFor="let actividad of actividades">
-    sss
     <div class="col-sm-2">
     </div>
     <div class="col-md-4">
-      <p class="textofestividad"><strong>Nombre de festividad:</strong> <br>
+      <p class="textofestividad"><strong>Nombre de la Actividad:</strong> <br>
         {{actividad.nombreActividad}}</p>
-      <p class="textofestividad"><strong>Mes de la festividad:</strong><br>
+      <p class="textofestividad"><strong>Dirección de la Actividad:</strong><br>
         {{actividad.direccionActividad}}</p>
-      <p class="textofestividad"><strong>Provincia de la festividad:</strong><br>
+      <p class="textofestividad"><strong>Descripción de la Actividad:</strong><br>
         {{actividad.descripcionActividad}}</p> <br>
-      <p class="textofestividad"><strong>Provincia de la festividad:</strong><br>
+      <p class="textofestividad"><strong>Fecha de la Actividad:</strong><br>
         {{actividad.fechaActividad}}</p> <br>
     </div>
-    <div class="col-sm-4"><br>
+    <div class="col-sm-5"><br>
       <img [src]="actividad.imagenActividad" alt="" id="imagen-festividad">
 
     </div>

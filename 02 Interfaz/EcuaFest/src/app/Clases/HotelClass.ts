@@ -5,7 +5,7 @@ export class HotelClass{
   constructor(public nombreHotel?:string,
               public direccionHotel?:string,
               public imagenHotel?:string,
-              public precioEstadia?: number,
+              public precioEstadia?:string,
               public id?:number,
               public createdAt?:Date,
               public updatedAt?:Date,

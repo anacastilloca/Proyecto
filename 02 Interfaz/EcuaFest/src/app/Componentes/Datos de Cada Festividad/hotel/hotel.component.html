@@ -1,3 +1,21 @@
-<p>
-  hotel works!
-</p>
+<form class="container" id="fondocontenedor">
+<div class="container">
+  <p id="titulofestividades" align="center">LISTA DE HOTELES</p>
+  <div class="row" *ngFor="let hotel of hoteles">
+
+    <div class="col-md-6">
+      <p class="textofestividad"><strong>Nombre del Hotel:</strong> <br>
+        {{hotel.nombreHotel}}</p>
+      <p class="textofestividad"><strong>Dirección del Hotel:</strong><br>
+        {{hotel.direccionHotel}}</p>
+      <p class="textofestividad"><strong>Precio de estadia del Hotel:</strong><br>
+        {{hotel.precioEstadia}}</p>
+    </div>
+      <div class="col-sm-6"><br>
+        <img [src]="hotel.imagenHotel" alt="" id="imagen-festividad">
+      </div>
+
+  </div>
+</div>
+
+</form>

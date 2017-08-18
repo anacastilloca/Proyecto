@@ -9,5 +9,12 @@ export class FoodService {
   constructor(private _http:Http,private _urlService:UrlService){
     this.url=this._urlService.url+this.modelo;
   }
+  presentarFoodPorFest(idFestividad:number){
+    return this._http
+      .get(this.url+"?idFestividad="+`${idFestividad}`)
+      .map(res => {
+        return res.json()
+      })
+  }
 
 }

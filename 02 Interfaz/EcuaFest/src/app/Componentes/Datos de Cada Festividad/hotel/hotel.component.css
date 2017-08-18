@@ -1,0 +1,26 @@
+#imagen-festividad{
+  width: 300px;
+  height: 200px;
+
+}
+
+.row{
+  border-bottom: double 10px red;
+  border-top: double 10px yellow;
+  border-right: double 10px blue;
+  border-left: double 10px blue;
+}
+
+.textofestividad{
+  font-family: "Open Sans", "Myriad Pro", Arial, sans-serif;
+  font-size: 20px;
+}
+
+#titulofestividades{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+
+}
+#fondocontenedor{
+  background-color: aliceblue;
+}

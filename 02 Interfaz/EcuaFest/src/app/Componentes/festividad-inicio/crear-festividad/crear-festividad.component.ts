@@ -17,18 +17,7 @@ export class CrearFestividadComponent implements OnInit {
   }
 
   crearFestividad(FestividadFormulario){
-    let festividadACrearse:FestividadClass =
-      new FestividadClass (FestividadFormulario.value.nombre,"123456");
-    /*
-     let usuario = {
-     nombre:"valor",
-     id:undefined,
-     createdAt:undefined,
-     updatedAt:undefined,
-     editar:undefined
-     }
-     */
-    this._festividadServicio.crearFestividad(festividadACrearse)
+    this._festividadServicio.crearFestividad(this.nuevaFestividad)
       .subscribe(
         (festividadCreada:FestividadClass) => {
           this.festividades.push(festividadCreada);

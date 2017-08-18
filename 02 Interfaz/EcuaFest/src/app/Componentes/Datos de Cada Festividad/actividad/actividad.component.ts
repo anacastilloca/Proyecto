@@ -11,9 +11,8 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 })
 export class ActividadComponent implements OnInit {
   actividades:ActividadClass[]=[];
-
-
   nuevaActividad:ActividadClass = new ActividadClass("");
+
   constructor(private _ActividadServicio:ActividadService, private _activatedRoute: ActivatedRoute) {
   }
 
