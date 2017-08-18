@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FestividadClass} from "../../Clases/FestividadClass";
 import {FestividadService} from "../../Servicios/festividad.service";
+import {Router, ActivatedRoute, Params} from '@angular/router';
+import {Http} from "@angular/http";
 
 @Component({
   selector: 'app-festividad-inicio',
@@ -26,9 +28,10 @@ export class FestividadInicioComponent implements OnInit {
    festividades:FestividadClass[]=[];
     nuevaFestividad:FestividadClass = new FestividadClass("");
     festividadLocal:FestividadClass;
+  @Output() festividadBorrada = new EventEmitter();
 
   //Llamado del servicio
-    constructor(private  _festividadServicio:FestividadService) { }
+    constructor(private _festividadServicio:FestividadService,private _http:Http) { }
 
   ngOnInit() {
     this._festividadServicio.presentarFestividades()
@@ -46,6 +49,17 @@ export class FestividadInicioComponent implements OnInit {
       } );
   }
 
+  eliminarFestividad(festividad: FestividadClass) {
+    this._http.delete("http://localhost:1337/Festividad/"+festividad.id)
+      .subscribe(respuesta=>{
+          // this.usuarioborrado.emit(usuario);
+          this.festividades.splice(this.festividades.indexOf(festividad),1)
+        },
+        error=>{
+          console.log("Error ", error)
+        }
+      )
+  }
 
   onClick(){
     this.DetalleClienteForm=true;

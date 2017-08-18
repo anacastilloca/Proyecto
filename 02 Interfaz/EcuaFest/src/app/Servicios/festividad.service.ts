@@ -41,4 +41,11 @@ export class FestividadService {
         return res.json()
       })
   }
+  borrarFestividad(festividad:FestividadClass,id:number){
+    return this._http
+      .delete(this.url+`/${id}`)
+      .map(res => {
+        return res.json()
+      })
+  }
 }

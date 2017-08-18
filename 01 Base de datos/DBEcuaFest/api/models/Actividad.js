@@ -6,7 +6,6 @@
  */
 
 module.exports = {
-
   attributes: {
     nombreActividad:{
       type:'string'
@@ -26,7 +25,6 @@ module.exports = {
     idFestividad:{
       model:"Festividad"//Modelo a Relacionar (Papa)
     }
-
   }
 };
 
