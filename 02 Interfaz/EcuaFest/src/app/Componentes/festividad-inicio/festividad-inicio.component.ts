@@ -26,9 +26,8 @@ export class FestividadInicioComponent implements OnInit {
 
   // LLamado a las Clase Festividad
    festividades:FestividadClass[]=[];
-    nuevaFestividad:FestividadClass = new FestividadClass("");
     festividadLocal:FestividadClass;
-  @Output() festividadBorrada = new EventEmitter();
+     @Output() festividadBorrada = new EventEmitter();
 
   //Llamado del servicio
     constructor(private _festividadServicio:FestividadService,private _http:Http) { }

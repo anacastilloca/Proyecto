@@ -16,6 +16,7 @@ import {HotelService} from "./Servicios/hotel.service";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {FormsModule} from "@angular/forms";
 import { EditarFestividadComponent } from './Componentes/festividad-inicio/editar-festividad/editar-festividad.component';
+import { CrearFestividadComponent } from './Componentes/festividad-inicio/crear-festividad/crear-festividad.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditarFestividadComponent } from './Componentes/festividad-inicio/edita
     HotelComponent,
     FoodComponent,
     ActividadComponent,
-    EditarFestividadComponent
+    EditarFestividadComponent,
+    CrearFestividadComponent
   ],
   imports: [
     BrowserModule,

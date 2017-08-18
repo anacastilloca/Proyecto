@@ -6,6 +6,7 @@ import {ModuleWithProviders} from "@angular/core";
 import {FestividadInicioComponent} from "./Componentes/festividad-inicio/festividad-inicio.component";
 import {AppComponent} from "./app.component";
 import {EditarFestividadComponent} from "./Componentes/festividad-inicio/editar-festividad/editar-festividad.component";
+import {CrearFestividadComponent} from "./Componentes/festividad-inicio/crear-festividad/crear-festividad.component";
 export const rutass:Routes=[
   {
     path:"actividad/:idFestividadDeActi",
@@ -21,8 +22,12 @@ export const rutass:Routes=[
     path:"",
     component:FestividadInicioComponent
   },{
-    path:"edidarFestividad/:idFestividad",
+    path:"editarFestividad/:idFestividad",
     component:EditarFestividadComponent
+  },
+  {
+    path:"crearFestividad/:idFestividad",
+    component:CrearFestividadComponent
   }
 
 ];

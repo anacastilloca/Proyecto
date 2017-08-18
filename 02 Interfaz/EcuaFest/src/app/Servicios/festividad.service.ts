@@ -41,9 +41,16 @@ export class FestividadService {
         return res.json()
       })
   }
-  borrarFestividad(festividad:FestividadClass,id:number){
+
+  crearFestividad(festividad:FestividadClass){
+    let datosAEnviar = {
+      nombreFestividad:festividad.nombreFestividad,
+      provinciaLugarFestividad:festividad.provinciaLugarFestividad,
+      mesFestividad:festividad.mesFestividad,
+      imagenLugarFestividad:festividad.imagenLugarFestividad
+    };
     return this._http
-      .delete(this.url+`/${id}`)
+      .post(this.url,datosAEnviar)
       .map(res => {
         return res.json()
       })

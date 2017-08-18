@@ -55,7 +55,8 @@
    <p id="titulofestividades" align="center">LISTA DE FESTIVIDADES</p>
   <div class="row" *ngFor="let festividad of festividades">
     <div class="col-sm-2">
-            <a [routerLink]="['edidarFestividad',festividad.id]" class="btn btn-success" (click)="onClick()">Editar</a><br><br>
+      <a [routerLink]="['editarFestividad',festividad.id]" class="btn btn-success" (click)="onClick()">Editar</a><br><br>
+      <a [routerLink]="['crearFestividad']" class="btn btn-success" (click)="onClick()">Crear</a><br><br>
             <button class="btn btn-danger" (click)="eliminarFestividad(festividad)"> Eliminar</button>
     </div>
     <div class="col-md-4">
